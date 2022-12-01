@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main_text {
+    font-size: 32px;
+    font-weight: 800;
+    color: grey;
+    margin-bottom: 20px;
+}
+
+.mainTop {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.mainTop > :nth-child(1) {
+    border: 1px solid rgb(168, 168, 168);
+    padding: 5px;
+    font-size: 0;
+}
+
+.mainTop > :nth-child(2) {
+    border: 1px solid rgb(168, 168, 168);
+    width: calc(100% - 620px);
+    height: 612px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 5px;
+}
+
+.mainTop > :nth-child(2) > :nth-child(1) {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    color: grey;
+    font-weight: 800;
+    font-size: 48px;
+
+    padding-top: 200px;
+}
+
+.mainTop > :nth-child(2) > :nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    color: grey;
+    font-weight: 800;
+    margin-bottom: 10px;
+
+    padding-top: 240px;
+}
+
+.mainTop > :nth-child(2) > :nth-child(3) {
+    width: 100%;
+    height: 60px;
+
+    background-color: #F1A172;
+    color: white;
+    font-weight: 800;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainTop > :nth-child(2) > :nth-child(3):hover {
+    cursor: pointer;
+}
+
+
+
+
+
+.mainBottom {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.mainBottom > :nth-child(1){
+    font-size: 24px;
+    font-weight: 800;
+    color: grey;
+}
+
+.mainBottom > :nth-child(2){
+    color: grey;
+}
+
+.mainBottom > :nth-child(3){
+    font-size: 24px;
+    font-weight: 800;
+    color: grey;
+}
+
+.mainBottom > ul {
+    list-style-position: inside;
+    color: grey;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}

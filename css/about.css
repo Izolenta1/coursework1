@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main1 {
+    display: flex;
+    flex-direction: column;
+}
+
+.main1_text1 {
+    font-size: 32px;
+    color: grey;
+    font-weight: 800;
+
+    margin-bottom: 40px;
+}
+
+.main1_text1 + img {
+    margin-bottom: 20px;
+}
+
+.main1_text2 {
+    font-size: 28px;
+    color: grey;
+    font-weight: 800;
+}
+
+.main2 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    color: grey;
+}
+
+.main2 > ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 16px;
+    list-style-position: inside;
+}
+
+.main3 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    font-weight: 800;
+    color: rgb(61, 61, 61);
+}
+
+.main3 > :nth-child(2) {
+    margin-bottom: 20px;
+}
