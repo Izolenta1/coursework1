@@ -34,6 +34,13 @@ function search() {
     searchObj.addEventListener("input", function() {searchEngine(searchObj.value)})
 }
 
+function catalogPosition() {
+    var catalogElem = document.querySelector(".navElem1")
+    var dropdownField = document.querySelector(".headerBottom_dropDownField")
+
+    dropdownField.setAttribute("style", `top:${catalogElem.clientHeight}px`)
+}
+
 function catalogOn(elem) {
     elem.setAttribute("style", "display: flex")
     elem.parentNode.setAttribute("style", "display: flex")
@@ -57,6 +64,7 @@ function catalog() {
         rightElemMas[i].addEventListener("mouseover", function() {catalogOn(rightElemMas[i])})
         rightElemMas[i].addEventListener("mouseout", function() {catalogOff(rightElemMas[i])})
     }
+    catalogPosition()
 }
 
 function updateCartIcon() {
@@ -96,3 +104,4 @@ function onLoad() {
 }
 
 window.addEventListener("load", onLoad);
+window.addEventListener("resize", catalogPosition)
