@@ -14,7 +14,7 @@ function fillCart() {
                         newTotalCost += jsonRes[j]["cost"]
 
                         let block = document.createElement("div")
-                        block.innerHTML += `<img src="../goodsImg/${jsonRes[j]["id"]}.jpg" style="width: 200px;">`
+                        block.innerHTML += `<img src="../goodsImg/${jsonRes[j]["id"]}.jpg">`
                         var innerBlock = document.createElement("div")
                         innerBlock.innerHTML += `<span>${jsonRes[j]["name"]}</span>`
                         var delBTN = document.createElement("div")

@@ -16,7 +16,7 @@ function fillCard(searchRes) {
         for (let i = 0; i < jsonRes.length; i++) {
             if (jsonRes[i]["id"] == Number(goodId)) {
                 header.innerHTML = jsonRes[i]["name"]
-                picture.innerHTML = `<img src="../goodsImg/${jsonRes[i]["id"]}.jpg" style="width: 600px;">`
+                picture.innerHTML = `<img src="../goodsImg/${jsonRes[i]["id"]}.jpg" class="goodImg goodImgAdaptation">`
                 cost.innerHTML = jsonRes[i]["cost"] + " руб."
                 onStore.innerHTML = jsonRes[i]["onStore"] == true ? "Товар есть в наличии" : "Товара нет в наличии"
                 description.innerHTML = jsonRes[i]["description"]

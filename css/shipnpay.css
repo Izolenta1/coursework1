@@ -6,6 +6,16 @@
     box-sizing: border-box;
 }
 
+.bodyGap {
+    gap: 20px;
+}
+
+@media (min-width: 1280px) {
+    .bodyGapAdaptation {
+        gap: 1.5vw;
+    }
+}
+
 .main {
     display: flex;
     flex-direction: column;
@@ -19,11 +29,23 @@
     margin-bottom: 40px;
 }
 
+@media (min-width: 1280px) {
+    .main1_text1Adaptation {
+        font-size: 2.5vw;
+    }
+}
+
 .main_text2 {
     font-size: 28px;
     color: grey;
     font-weight: 800;
     margin-bottom: 20px;
+}
+
+@media (min-width: 1280px) {
+    .main1_text2Adaptation {
+        font-size: 2.2vw;
+    }
 }
 
 .mainInner_1 {
@@ -51,4 +73,10 @@
     flex-direction: column;
     gap: 15px;
     margin-bottom: 40px;
+}
+
+@media (min-width: 1280px) {
+    .main16pxTextAdaptation {
+        font-size: 1.2vw;
+    }
 }

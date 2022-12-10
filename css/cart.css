@@ -6,6 +6,16 @@
     box-sizing: border-box;
 }
 
+.bodyGap {
+    gap: 20px;
+}
+
+@media (min-width: 1280px) {
+    .bodyGapAdaptation {
+        gap: 1.5vw;
+    }
+}
+
 .main_text {
     font-size: 32px;
     font-weight: 800;
@@ -13,10 +23,23 @@
     margin-bottom: 20px;
 }
 
+@media (min-width: 1280px) {
+    .main_textAdaptation {
+        font-size: 2.5vw;
+    }
+}
+
 main > section {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+}
+
+@media (max-width: 949px) {
+    main > section {
+        flex-direction: column;
+        gap: 20px;
+    }
 }
 
 main > section > :nth-child(1) {
@@ -28,14 +51,47 @@ main > section > :nth-child(1) {
     gap: 10px;
 }
 
+@media (min-width: 1280px) {
+    main > section > :nth-child(1) {
+        gap: 1vw;
+    }
+}
+
+@media (max-width: 949px) {
+    main > section > :nth-child(1) {
+        width: 100%;
+    }
+}
+
+@media (max-width: 599px) {
+    main > section > :nth-child(1) {
+        gap: 40px;
+    }
+}
+
 main > section > :nth-child(1) > div {
     display: flex;
     flex-direction: row;
 }
 
+@media (max-width: 599px) {
+    main > section > :nth-child(1) > div {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
 main > section > :nth-child(1) > div > :nth-child(1) {
     border: 1px solid rgb(168, 168, 168);
     padding: 5px;
+
+    width: 200px;
+}
+
+@media (min-width: 1280px) {
+    main > section > :nth-child(1) > div > :nth-child(1) {
+        width: 16vw;
+    }
 }
 
 main > section > :nth-child(1) > div > :nth-child(2) {
@@ -46,6 +102,21 @@ main > section > :nth-child(1) > div > :nth-child(2) {
 
     color: grey;
     font-size: 20px;
+    flex-grow: 1;
+}
+
+@media (min-width: 1280px) {
+    main > section > :nth-child(1) > div > :nth-child(2) {
+        font-size: 1.5vw;
+        padding: 1vw;
+    }
+}
+
+@media (max-width: 599px) {
+    main > section > :nth-child(1) > div > :nth-child(2) {
+        gap: 10px;
+        padding: 0;
+    }
 }
 
 main > section > :nth-child(1) > div > :nth-child(2) > :nth-child(2) {
@@ -55,6 +126,12 @@ main > section > :nth-child(1) > div > :nth-child(2) > :nth-child(2) {
 
     width: fit-content;
     padding: 10px;
+}
+
+@media (min-width: 1280px) {
+    main > section > :nth-child(1) > div > :nth-child(2) > :nth-child(2) {
+        padding: 1vw;
+    }
 }
 
 main > section > :nth-child(1) > div > :nth-child(2) > :nth-child(2):hover {
@@ -70,6 +147,18 @@ main > section > :nth-child(1) > div > :nth-child(3) {
     color: grey;
 }
 
+@media (min-width: 1280px) {
+    main > section > :nth-child(1) > div > :nth-child(3) {
+        font-size: 1.8vw;
+    }
+}
+
+@media (max-width: 599px) {
+    main > section > :nth-child(1) > div > :nth-child(3) {
+        padding: 0;
+    }
+}
+
 main > section > :nth-child(2) {
     width: 29%;
     min-height: 400px;
@@ -81,17 +170,40 @@ main > section > :nth-child(2) {
     align-items: center;
 }
 
+@media (min-width: 1280px) {
+    main > section > :nth-child(2) {
+        padding-top: 2.5vw;
+    }
+}
+
+@media (max-width: 949px) {
+    main > section > :nth-child(2) {
+        width: 100%;
+        min-height: 0px;
+        padding-bottom: 30px;
+    }
+}
+
 main > section > :nth-child(2) > :nth-child(1) {
-    font-size: 24px;
+    font-size: 22px;
     color: grey;
     font-weight: 800;
     margin-bottom: 20px;
+    width: 95%;
+    text-align: center;
+}
+
+@media (min-width: 1280px) {
+    main > section > :nth-child(2) > :nth-child(1) {
+        font-size: 1.7vw;
+        margin-bottom: 1.5vw;
+    }
 }
 
 main > section > :nth-child(2) > :nth-child(2) {
     background-color: #EB7835;
     color: white;
-    font-size: 32px;
+    font-size: 28px;
     font-weight: 800;
     width: 95%;
     height: 60px;
@@ -99,4 +211,11 @@ main > section > :nth-child(2) > :nth-child(2) {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+@media (min-width: 1280px) {
+    main > section > :nth-child(2) > :nth-child(2) {
+        font-size: 2.2vw;
+        height: 4.8vw;
+    }
 }

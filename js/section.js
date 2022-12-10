@@ -27,7 +27,7 @@ function fillPage(searchRes) {
             if (jsonRes[i]["section"] == sectionName) {
                 var block = document.createElement("div")
                 block.classList.add("main_block")
-                block.innerHTML = `<a href="goodCard.html?id=${jsonRes[i]["id"]}"><img src="../goodsImg/${jsonRes[i]["id"]}.jpg" style="width: 200px;"></a>
+                block.innerHTML = `<a href="goodCard.html?id=${jsonRes[i]["id"]}"><img src="../goodsImg/${jsonRes[i]["id"]}.jpg" class="main_blockImg"></a>
                                     <a href="goodCard.html?id=${jsonRes[i]["id"]}">${jsonRes[i]["name"]}</a>
                                     <a href="goodCard.html?id=${jsonRes[i]["id"]}">${jsonRes[i]["cost"]} ₽</a>`
                 var cartBTN = document.createElement("div")

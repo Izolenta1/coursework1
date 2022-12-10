@@ -20,7 +20,7 @@ function searchEngine(goodText) {
         for (let i = 0; i < resultMas.length; i++) {
             str += `<a class="headerMiddle_searchDiv_searchField_cell" href="goodCard.html?id=${resultMas[i]["id"]}">
                             <div>
-                                <img src="../goodsImg/${resultMas[i]["id"]}.jpg" style="width: 100px;">
+                                <img src="../goodsImg/${resultMas[i]["id"]}.jpg" class="headerMiddle_searchDiv_searchField_cellImg headerMiddle_searchDiv_searchField_cellImgAdaptation">
                             </div>
                             <span>${resultMas[i]["name"]}</span>
                         </a>`
@@ -97,10 +97,47 @@ function updateCartIcon() {
     })
 }
 
+function leftMenuOn() {
+    var leftMenuField = document.querySelector(".leftMenuField")
+    leftMenuField.style.marginLeft = "0px"
+}
+
+function leftMenuOff() {
+    var leftMenuField = document.querySelector(".leftMenuField")
+    leftMenuField.style.marginLeft = "-300px"
+}
+
+function leftMenu() {
+    var closeMenuBTN = document.querySelector(".closeLeftMenuBTN")
+    var openMenuBTN = document.querySelector(".navElem5")
+
+    closeMenuBTN.addEventListener("click", leftMenuOff)
+    openMenuBTN.addEventListener("click", leftMenuOn)
+}
+
+// function leftMenu_menuBTNOn(field) {
+//     field.style.display = "flex"
+// }
+
+// function leftMenu_menuBTNOff(field) {
+    
+// }
+
+// function leftMenu_menuBTNs() {
+//     var leftMenuBTNMas = document.querySelector(".leftMenuBTN")
+//     var leftMenuBTNFieldMas = document.querySelector(".leftMenuBTNField")
+
+//     for (let i = 0; i < leftMenuBTNMas.length; i++) {
+//         leftMenuBTNMas[i].addEventListener("click", function() {leftMenu_menuBTNOn(leftMenuBTNFieldMas[i])})
+//     }
+// }
+
 function onLoad() {
     search()
     catalog()
     updateCartIcon()
+    leftMenu()
+    // leftMenu_menuBTNs()
 }
 
 window.addEventListener("load", onLoad);

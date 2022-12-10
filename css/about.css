@@ -6,6 +6,20 @@
     box-sizing: border-box;
 }
 
+main {
+    gap: 20px;
+}
+
+.bodyGap {
+    gap: 20px;
+}
+
+@media (min-width: 1280px) {
+    .bodyGapAdaptation {
+        gap: 1.5vw;
+    }
+}
+
 .main1 {
     display: flex;
     flex-direction: column;
@@ -19,6 +33,12 @@
     margin-bottom: 40px;
 }
 
+@media (min-width: 1280px) {
+    .main1_text1Adaptation {
+        font-size: 2.5vw;
+    }
+}
+
 .main1_text1 + img {
     margin-bottom: 20px;
 }
@@ -27,6 +47,12 @@
     font-size: 28px;
     color: grey;
     font-weight: 800;
+}
+
+@media (min-width: 1280px) {
+    .main1_text2Adaptation {
+        font-size: 2.2vw;
+    }
 }
 
 .main2 {
@@ -56,4 +82,20 @@
 
 .main3 > :nth-child(2) {
     margin-bottom: 20px;
+}
+
+@media (max-width: 449px) {
+    .aboutText2 {
+        display: none;
+    }
+
+    .aboutImg2 {
+        display: none;
+    }
+}
+
+@media (min-width: 1280px) {
+    .main16pxTextAdaptation {
+        font-size: 1.2vw;
+    }
 }
