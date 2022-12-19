@@ -3,14 +3,12 @@ var sliderOffset = 0;
 function sliderMoveLeft(slide) {
     sliderOffset -= 100;
     sliderOffset = sliderOffset <= -200 ? -200 : sliderOffset;
-    // slide.setAttribute("style", `margin-left: ${sliderOffset}%`)
     slide.style.marginLeft = `${sliderOffset}%`
 }
 
 function sliderMoveRight(slide) {
     sliderOffset += 100;
     sliderOffset = sliderOffset >= 0 ? 0 : sliderOffset;
-    // slide.setAttribute("style", `margin-left: ${sliderOffset}%`)
     slide.style.marginLeft = `${sliderOffset}%`
 }
 

@@ -115,29 +115,11 @@ function leftMenu() {
     openMenuBTN.addEventListener("click", leftMenuOn)
 }
 
-// function leftMenu_menuBTNOn(field) {
-//     field.style.display = "flex"
-// }
-
-// function leftMenu_menuBTNOff(field) {
-    
-// }
-
-// function leftMenu_menuBTNs() {
-//     var leftMenuBTNMas = document.querySelector(".leftMenuBTN")
-//     var leftMenuBTNFieldMas = document.querySelector(".leftMenuBTNField")
-
-//     for (let i = 0; i < leftMenuBTNMas.length; i++) {
-//         leftMenuBTNMas[i].addEventListener("click", function() {leftMenu_menuBTNOn(leftMenuBTNFieldMas[i])})
-//     }
-// }
-
 function onLoad() {
     search()
     catalog()
     updateCartIcon()
     leftMenu()
-    // leftMenu_menuBTNs()
 }
 
 window.addEventListener("load", onLoad);
